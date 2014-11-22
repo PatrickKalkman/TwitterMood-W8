@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Package xmlns="http://schemas.microsoft.com/appx/2010/manifest">
+  <Identity Name="46936PatrickKalkman.TwitterMood" Publisher="CN=AD094C94-37E0-4D45-857D-C31200653F83" Version="1.5.0.10" />
+  <Properties>
+    <DisplayName>TwitterMood</DisplayName>
+    <PublisherDisplayName>Patrick Kalkman</PublisherDisplayName>
+    <Logo>Assets\StoreLogo.png</Logo>
+    <Description>TwitterMoodString</Description>
+  </Properties>
+  <Prerequisites>
+    <OSMinVersion>6.2.1</OSMinVersion>
+    <OSMaxVersionTested>6.2.1</OSMaxVersionTested>
+  </Prerequisites>
+  <Resources>
+    <Resource Language="x-generate" />
+  </Resources>
+  <Applications>
+    <Application Id="App" Executable="$targetnametoken$.exe" EntryPoint="TwitterMood.App">
+      <VisualElements DisplayName="TwitterMood" Logo="Assets\Logo.png" SmallLogo="Assets\SmallLogo.png" Description="Shows the current mood of the world on Twitter." ForegroundText="light" BackgroundColor="#000000">
+        <LockScreen Notification="badgeAndTileText" BadgeLogo="Assets\BadgeLogo.png" />
+        <DefaultTile ShowName="noLogos" WideLogo="Assets\WideLogo.png" />
+        <SplashScreen Image="Assets\SplashScreen.png" BackgroundColor="#000000" />
+      </VisualElements>
+      <Extensions>
+        <Extension Category="windows.backgroundTasks" EntryPoint="TwitterMoodString.Task.TileUpdaterBackgroundTask">
+          <BackgroundTasks>
+            <Task Type="timer" />
+          </BackgroundTasks>
+        </Extension>
+      </Extensions>
+    </Application>
+  </Applications>
+  <Capabilities>
+    <Capability Name="internetClient" />
+  </Capabilities>
+</Package>

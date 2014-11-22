@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" source-language="en-US" target-language="en" original="TwitterMood_Multilingual.prilog.xml" tool-id="MultilingualAppToolkit" product-name="TwitterMood" product-version="1.0.0.0" build-num="0001">
+    <header>
+      <tool tool-id="MultilingualAppToolkit" tool-name="Multilingual App Toolkit" tool-version="1.2.2017.0" tool-company="Microsoft" />
+    </header>
+    <body>
+      <group id="Resources">
+        <trans-unit id="Resources\AdditionalSearchTermLabel\Text" translate="yes" xml:space="preserve">
+          <source>Additional Search Term:</source>
+          <target state="new">Additional Search Term:</target>
+        </trans-unit>
+        <trans-unit id="Resources\Anger" translate="yes" xml:space="preserve">
+          <source>Anger</source>
+          <target state="new">Anger</target>
+        </trans-unit>
+        <trans-unit id="Resources\Calculating" translate="yes" xml:space="preserve">
+          <source>Calculating Mood.......</source>
+          <target state="new">Calculating Mood.......</target>
+        </trans-unit>
+        <trans-unit id="Resources\CurrentMood" translate="yes" xml:space="preserve">
+          <source>The current Twitter mood: </source>
+          <target state="new">The current Twitter mood: </target>
+        </trans-unit>
+        <trans-unit id="Resources\Envy" translate="yes" xml:space="preserve">
+          <source>Envy</source>
+          <target state="new">Envy</target>
+        </trans-unit>
+        <trans-unit id="Resources\Fear" translate="yes" xml:space="preserve">
+          <source>Fear</source>
+          <target state="new">Fear</target>
+        </trans-unit>
+        <trans-unit id="Resources\Happy" translate="yes" xml:space="preserve">
+          <source>Happy</source>
+          <target state="new">Happy</target>
+        </trans-unit>
+        <trans-unit id="Resources\Love" translate="yes" xml:space="preserve">
+          <source>Love</source>
+          <target state="new">Love</target>
+        </trans-unit>
+        <trans-unit id="Resources\MoodSettings" translate="yes" xml:space="preserve">
+          <source>Mood settings</source>
+          <target state="new">Mood settings</target>
+        </trans-unit>
+        <trans-unit id="Resources\MoodTileTitle" translate="yes" xml:space="preserve">
+          <source>Current Twitter mood: {0}</source>
+          <target state="new">Current Twitter mood: {0}</target>
+        </trans-unit>
+        <trans-unit id="Resources\NoConnection\Text" translate="yes" xml:space="preserve">
+          <source>There is no internet connection available, using default values for calculation</source>
+          <target state="new">There is no internet connection available, using default values for calculation</target>
+        </trans-unit>
+        <trans-unit id="Resources\Sadness" translate="yes" xml:space="preserve">
+          <source>Sadness</source>
+          <target state="new">Sadness</target>
+        </trans-unit>
+        <trans-unit id="Resources\Save\Content" translate="yes" xml:space="preserve">
+          <source>Save</source>
+          <target state="new">Save</target>
+        </trans-unit>
+        <trans-unit id="Resources\Surprise" translate="yes" xml:space="preserve">
+          <source>Surprise</source>
+          <target state="new">Surprise</target>
+        </trans-unit>
+        <trans-unit id="Resources\ThankYouReview" translate="yes" xml:space="preserve">
+          <source>Thank you for using this free Twitter Mood app, would you like to review this app?</source>
+          <target state="new">Thank you for using this free Twitter Mood app, would you like to review this app?</target>
+        </trans-unit>
+        <trans-unit id="Resources\ThankYouTitle" translate="yes" xml:space="preserve">
+          <source>Please review Twitter Mood</source>
+          <target state="new">Please review Twitter Mood</target>
+        </trans-unit>
+        <trans-unit id="Resources\TwitterMoodDetail" translate="yes" xml:space="preserve">
+          <source>Mood detail</source>
+          <target state="new">Mood detail</target>
+        </trans-unit>
+        <trans-unit id="Resources\TwitterMoodGraph" translate="yes" xml:space="preserve">
+          <source>Twitter Mood Graph</source>
+          <target state="new">Twitter Mood Graph</target>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

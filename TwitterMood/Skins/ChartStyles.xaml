@@ -1,0 +1,53 @@
+﻿<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:TwitterMood.Skins" xmlns:charting="using:WinRTXamlToolkit.Controls.DataVisualization.Charting">
+
+    <Style x:Key="DataPointStyle"  TargetType="charting:ColumnDataPoint">
+        <Setter
+            Property="Background"
+            Value="Orange" />
+    </Style>
+    
+    <Style x:Key="ColorByGradeColumn" TargetType="charting:ColumnDataPoint">
+        <Setter Property="Background" Value="DarkGray"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="charting:ColumnDataPoint">
+                    <Border  Background="{Binding MoodColor}" 
+                         BorderBrush="{Binding MoodColorBorder}" 
+                         BorderThickness="2.5">
+                        <Grid Background="{x:Null}">
+                            <ToolTipService.ToolTip>
+                                <!--Provides the tooltip for each column -->
+                                <StackPanel>
+                                    <ContentControl 
+                                  Content ="{ TemplateBinding IndependentValue }"/>
+                                    <StackPanel Orientation="Horizontal">
+                                        <ContentControl 
+                                        Content ="{ TemplateBinding 
+                                             FormattedDependentValue }"/>
+                                        <ContentControl Content ="ppm"/>
+                                    </StackPanel>
+                                </StackPanel>
+                            </ToolTipService.ToolTip>
+                            <Border BorderBrush="{x:Null}">
+                                <Border.Background>
+                                    <!--This gradiesnt provides 
+                                           the gloss-like feature for each-->
+                                    <LinearGradientBrush EndPoint="1.344,0.5" 
+                                          StartPoint="-0.344,0.5">
+                                        <GradientStop Color="{Binding MoodColor}" Offset="0"/>
+                                        <GradientStop Color="{Binding MoodColor}" 
+                                          Offset="0.5"/>
+                                    </LinearGradientBrush>
+                                </Border.Background>
+                            </Border>
+                        </Grid>
+                    </Border>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+</ResourceDictionary>

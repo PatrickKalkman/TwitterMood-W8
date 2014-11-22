@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" source-language="en-US" target-language="nl" original="TwitterMood_Multilingual.prilog.xml" tool-id="MultilingualAppToolkit" product-name="TwitterMood" product-version="1.0.0.0" build-num="0001">
+    <header>
+      <tool tool-id="MultilingualAppToolkit" tool-name="Multilingual App Toolkit" tool-version="1.2.2017.0" tool-company="Microsoft" />
+    </header>
+    <body>
+      <group id="Resources">
+        <trans-unit id="Resources\AdditionalSearchTermLabel\Text" translate="yes" xml:space="preserve">
+          <source>Additional Search Term:</source>
+          <target state="new">Extra zoek term:</target>
+        </trans-unit>
+        <trans-unit id="Resources\Anger" translate="yes" xml:space="preserve">
+          <source>Anger</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Woede</target>
+        </trans-unit>
+        <trans-unit id="Resources\Calculating" translate="yes" xml:space="preserve">
+          <source>Calculating Mood.......</source>
+          <target state="translated">Berekenen stemming.......</target>
+        </trans-unit>
+        <trans-unit id="Resources\CurrentMood" translate="yes" xml:space="preserve">
+          <source>The current Twitter mood: </source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">De huidige Twitter stemming: </target>
+        </trans-unit>
+        <trans-unit id="Resources\Envy" translate="yes" xml:space="preserve">
+          <source>Envy</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Afgunst</target>
+        </trans-unit>
+        <trans-unit id="Resources\Fear" translate="yes" xml:space="preserve">
+          <source>Fear</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Angst</target>
+        </trans-unit>
+        <trans-unit id="Resources\Happy" translate="yes" xml:space="preserve">
+          <source>Happy</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Gelukkig</target>
+        </trans-unit>
+        <trans-unit id="Resources\Love" translate="yes" xml:space="preserve">
+          <source>Love</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Liefde</target>
+        </trans-unit>
+        <trans-unit id="Resources\MoodSettings" translate="yes" xml:space="preserve">
+          <source>Mood settings</source>
+          <target state="translated">Instellingen</target>
+        </trans-unit>
+        <trans-unit id="Resources\MoodTileTitle" translate="yes" xml:space="preserve">
+          <source>Current Twitter mood: {0}</source>
+          <target state="translated">Twitter stemming: {0}</target>
+        </trans-unit>
+        <trans-unit id="Resources\NoConnection\Text" translate="yes" xml:space="preserve">
+          <source>There is no internet connection available, using default values for calculation</source>
+          <target state="translated">Er is geen internetverbinding beschikbaar, er wordt gerekend met standaardwaardes.</target>
+        </trans-unit>
+        <trans-unit id="Resources\Sadness" translate="yes" xml:space="preserve">
+          <source>Sadness</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Verdriet</target>
+        </trans-unit>
+        <trans-unit id="Resources\Save\Content" translate="yes" xml:space="preserve">
+          <source>Save</source>
+          <target state="new">Opslaan</target>
+        </trans-unit>
+        <trans-unit id="Resources\Surprise" translate="yes" xml:space="preserve">
+          <source>Surprise</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Verrassing</target>
+        </trans-unit>
+        <trans-unit id="Resources\ThankYouReview" translate="yes" xml:space="preserve">
+          <source>Thank you for using this free Twitter Mood app, would you like to review this app?</source>
+          <target state="translated">Bedankt voor het gebruiken van Twitter Mood, ik zou het fijn vinden als je een review kan achterlaten?</target>
+        </trans-unit>
+        <trans-unit id="Resources\ThankYouTitle" translate="yes" xml:space="preserve">
+          <source>Please review Twitter Mood</source>
+          <target state="translated">Review Twitter Mood</target>
+        </trans-unit>
+        <trans-unit id="Resources\TwitterMoodDetail" translate="yes" xml:space="preserve">
+          <source>Mood detail</source>
+          <target state="translated">Detail</target>
+        </trans-unit>
+        <trans-unit id="Resources\TwitterMoodGraph" translate="yes" xml:space="preserve">
+          <source>Twitter Mood Graph</source>
+          <target state="translated">Twitter Mood Grafiek</target>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

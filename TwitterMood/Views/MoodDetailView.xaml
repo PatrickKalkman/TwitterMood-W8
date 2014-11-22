@@ -1,0 +1,53 @@
+﻿<Page x:Class="TwitterMood.MoodDetailView"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+      xmlns:ignore="http://www.ignore.com" xmlns:winRtBehaviors="using:WinRtBehaviors"
+      xmlns:win8nlBehavior="using:Win8nl.Behaviors"
+      DataContext="{Binding Detail, Source={StaticResource Locator}}"
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:viewModel="using:TwitterMood.ViewModel"
+      d:DataContext="{d:DesignInstance Type=viewModel:MoodDetailViewModel, IsDesignTimeCreatable=True}"
+      mc:Ignorable="d">
+
+    <Grid Style="{StaticResource LayoutRootStyle}">
+
+        <Grid.Background>
+            <ImageBrush ImageSource="/Assets/MainBackground.png" Stretch="UniformToFill"/>
+        </Grid.Background>
+        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="140"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <GridView
+            x:Name="itemGridView"
+            AutomationProperties.AutomationId="ItemsGridView"
+            AutomationProperties.Name="Items"
+            TabIndex="1"
+            Grid.RowSpan="2"
+            Padding="116,136,116,46"
+            ItemsSource="{Binding TwitterMoodResult}"
+            ItemTemplate="{StaticResource Standard130ItemTemplate}"
+            SelectionMode="Single"
+            IsSwipeEnabled="false" HorizontalAlignment="Left" Margin="0,0,-272,0" Width="1638" />
+
+        <!-- Back button and page title -->
+        <Grid Grid.ColumnSpan="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <StackPanel Orientation="Horizontal">
+                <Button x:Name="backButton" Style="{StaticResource BackButtonStyle}">
+                    <winRtBehaviors:Interaction.Behaviors>
+                        <win8nlBehavior:EventToCommandBehavior Event="Tapped" Command="GoBackCommand"/>
+                    </winRtBehaviors:Interaction.Behaviors>
+                </Button>
+                <TextBlock x:Name="pageTitle" Grid.Column="1" Text="{Binding Title}" IsHitTestVisible="false" Style="{StaticResource PageHeaderTextStyle}"/>
+            </StackPanel>
+        </Grid>
+
+    </Grid>
+</Page>
