@@ -1,5 +1,6 @@
 TwitterMood-W8
 ==============
+[![Build status](https://ci.appveyor.com/api/projects/status/esc6936thc53samh/branch/master?svg=true)](https://ci.appveyor.com/project/kalkie/twittermood-w8)
 
 Windows Store app to determine the current mood of the world on Twitter
 
